@@ -1,0 +1,92 @@
+<html>
+
+<head>
+
+
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+
+
+
+
+    <div class="container py-5">
+
+        <div class="mb-3">
+
+            <label for="productName">User Name :</label>
+
+            <input type="text" class="form-control" id="productName">
+        </div>
+        <div class="mb-3">
+
+            <label for="productPrice">Time :</label>
+
+            <input type="time" class="form-control" id="productPrice">
+        </div>
+        <div class="mb-3">
+
+            <label for="productday">Day :</label>
+
+            <input type="date" class="form-control" id="productday">
+        </div>
+        <div class="mb-3">
+
+            <label for="productCategory" class="mb-3">Stadium :</label>
+
+            <select id="productCategory" class="form-select">
+
+                <option selected disabled>Stadium</option>
+                <option value="العالمي">العالمي</option>
+                <option value="المنشية">المنشية</option>
+                <option value="العبودي">العبودي</option>
+                <option value="دمو">دمو</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+
+            <label for="productDescription">Your suggestions</label>
+
+
+            <textarea id="productDescription" class="form-control"></textarea>
+        </div>
+
+
+
+        <button onclick="addProduct()" class="btn btn-outline-info">Add Product</button>
+        <button class="btn btn-outline-danger">clear Form</button>
+    </div>
+
+    <div class="container">
+
+        <input type="text" placeholder="search......" class="form-control w-50 mx-auto my-4">
+
+
+        <table class="table table-striped">
+
+            <thead>
+
+                <th>#</th>
+                <th>User Name</th>
+                <th>Time </th>
+                <th>Day </th>
+                <th>Stadium </th>
+                <th>Your suggestions</th>
+                <th>update</th>
+                <th>delete</th>
+            </thead>
+            <tbody id="tableBody">
+
+
+            </tbody>
+
+        </table>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
